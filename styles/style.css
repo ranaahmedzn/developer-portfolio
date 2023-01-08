@@ -99,3 +99,135 @@
 .banner-image {
     width: 480px;
 }
+
+/*--main styles start here--*/
+main {
+    padding: 100px 200px;
+}
+
+/*--about me section styles--*/
+.about-section {
+    padding: 100px 140px;
+    margin-bottom: 100px;
+    background-color: #c4b5b244;
+    border-radius: 5px;
+}
+.section-heading {
+    text-align: center;
+    font-size: 35px;
+}
+.section-description {
+    text-align: center;
+    font-size: 16px;
+    margin: 30px 0;
+    color: rgba(0, 0, 0, 0.61);
+}
+table {
+    width: 100%;
+    margin-top: 40px;
+}
+th,td {
+    text-align: center;
+    font-size: 16;
+}
+
+/*--my work section styles--*/
+.my-work-section {
+
+}
+.my-work-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.my-work-container div {
+    width: 22%;
+    padding: 20px;
+    box-shadow:  3px 3px 10px rgba(128, 128, 128, 0.212);
+}
+.my-work-container img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.my-work-container p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+/*--summary section styles--*/
+.summary-section {
+    margin: 100px 0 0;
+}
+.summary-section-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 50px;
+}
+.education-experience {
+    width: 45%;
+}
+.education-experience h4 {
+    font-size: 26px;
+}
+.education-experience h5 {
+    font-size: 22px;
+    margin: 25px 0 15px;
+}
+.institute-para {
+    color: rgba(0, 0, 0, 0.61);
+}
+.institute-para2 {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.61);
+}
+.btn-container{
+    width: 25%;
+    margin: 0 auto;
+}
+
+/*--footer styles start here--*/
+.footer {
+    padding: 100px 200px;
+    background-color: #c4b5b244;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-contact {
+    width: 45%;
+}
+.footer-message {
+    width: 45%;
+}
+.footer-message h3 {
+    margin-bottom: 25px;
+}
+.footer h3 {
+    font-size: 35px;
+}
+.footer p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.61);
+}
+.footer img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+input[type ="text"],
+input[type ="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.829);
+}
