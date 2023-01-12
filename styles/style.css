@@ -32,6 +32,7 @@
 .navmenu {
     display: flex;
     list-style: none;
+    justify-content: center;
     align-items: center;
 }
 
@@ -122,26 +123,22 @@ main {
     margin: 30px 0;
     color: rgba(0, 0, 0, 0.61);
 }
-table {
-    width: 100%;
-    margin-top: 40px;
-}
-th,td {
+.address{
     text-align: center;
-    font-size: 16;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 /*--my work section styles--*/
-.my-work-section {
-
-}
 .my-work-container {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    gap: 25px;
 }
 .my-work-container div {
-    width: 22%;
     padding: 20px;
     box-shadow:  3px 3px 10px rgba(128, 128, 128, 0.212);
 }
@@ -165,9 +162,7 @@ th,td {
     display: flex;
     justify-content: space-between;
     margin: 100px 0 50px;
-}
-.education-experience {
-    width: 45%;
+    gap: 60px;
 }
 .education-experience h4 {
     font-size: 26px;
@@ -195,6 +190,7 @@ th,td {
     padding: 100px 200px;
     background-color: #c4b5b244;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
 }
 .footer-contact {
@@ -230,4 +226,52 @@ textarea {
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.829);
+}
+
+
+/* Responsive styles for (smaller device) */
+@media screen and (max-width: 576px){
+    main{
+        padding: 80px 50px;
+    }
+    .header-container{
+        background-image: none;
+        padding: 50px;
+    }
+    .nav-container {
+        flex-direction: column-reverse;
+    }
+    .nav-title {
+        display: none;
+    }
+    .navmenu{
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .navmenu li{
+        margin: 0;
+    }
+    .banner-info .primary-btn {
+        margin: 0 0 15px 0;
+    }
+    .banner-image{
+        display: none;
+    }
+    .header-banner, .my-work-container{
+        flex-direction: column;
+    }
+    .summary-section-container{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .btn-container{
+        width: 72%;
+    }
+    .about-section, .address, .footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-contact, .footer-message {
+        width: 100%;
+    }
 }
